@@ -29,15 +29,16 @@ color1.addEventListener("input", colorChange);
 color2.addEventListener("input", colorChange);
 
 color1.value = localStorage.getItem('col1');
+color2.value = localStorage.getItem('col2');
 
 console.log(color1.value);
 
-body.style.background = 
-    "linear-gradient(to right,"
-     +  localStorage.getItem('col1') 
-     + ", " 
-     + localStorage.getItem('col2') 
-     + ")";
+// body.style.background = 
+//     "linear-gradient(to right,"
+//      +  localStorage.getItem('col1') 
+//      + ", " 
+//      + localStorage.getItem('col2') 
+//      + ")";
 
 // localStorage.setItem('col1', 'blue');
-// colorChange();
+colorChange();
